@@ -37,18 +37,14 @@ The algorithm should always use the longest possible overlap.
 
 Step1: Define the function with two string arguments: `def merge_strings(str1, str2)`
 
-Step2: Iterate over a range of numbers from min(str1.length, str2.length) down to 0, in descending order. This will allow you to check the possible overlaps from the longest to the shortest.
+Step2: Iterate over a range of numbers from min(str1.length, str2.length) down to 0, in descending order. This will allow me to check the possible overlaps from the longest to the shortest.
 
-Step3: Check if str1 ends with the substring of str2 starting at index 0 and going up to the current index in the loop. You can use the String#end_with? and String#slice methods for this.
+Step3: Check if str1 ends with the substring of str2 starting at index 0 and going up to the current index in the loop. I used the String#end_with? and String#slice methods for this.
 
-Step4: If you find a matching overlap, concatenate str1 with the remaining part of str2 starting from the index after the overlap. You can use the String#+ and String#slice methods for this.
-
-Step5: If you don't find any overlap, simply concatenate the two strings.
+Step4: If the matching overlap, concatenate str1 with the remaining part of str2 starting from the index after the overlap. You can use the String#+ and String#slice methods for this.
 
 Step6: Return the resulting merged string.
 
-Step7: Add some tests to ensure that the function works correctly. You can use the examples provided in the prompt and come up with some additional edge cases.
 
-Step7: Refactor the code if necessary to make it more readable or efficient.
 
 
